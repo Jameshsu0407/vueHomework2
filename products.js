@@ -19,7 +19,7 @@ createApp({
 					this.getData();
 				})
 				.catch((err) => {
-					alert(err.response.data.message);
+					alert(err.data.message);
 					window.location = "login.html";
 				});
 		},
@@ -33,7 +33,7 @@ createApp({
                     // console.log(this.products)
 				})
 				.catch((err) => {
-					alert(err.response.data.message);
+					alert(err.data.message);
 				});
         },
 	},
