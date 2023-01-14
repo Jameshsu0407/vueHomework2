@@ -44,7 +44,7 @@
                                     {{ product.price }}
                                 </td>
                                 <td width="150">
-                                    <span class="text-success">{{ product.is_enabled ? '啟用' : '未啟用'}}</span>
+                                    <span :class="product.is_enabled ? 'text-success' : '' ">{{ product.is_enabled ? '啟用' : '未啟用'}}</span>
                                 </td>
                                 <td width="120">
                                     <button type="button" class="btn btn-primary" @click="tempProduct = product">查看細節</button>
